@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KTNN</title>
+</head>
+<body>
+<script>
+    let nam = parseInt(prompt("Nhập năm"));
+    let lanamnhuan = false;
+
+    if (nam % 4 == 0) {
+        if (nam % 100 == 0) {
+            if (nam % 400 == 0) {
+                lanamnhuan = true;
+            }
+        } else {
+            lanamnhuan = true;
+        }
+    }
+
+    if (lanamnhuan) {
+        alert(nam + " Là năm nhuận");
+    } else {
+        alert(nam + " Không phải là năm nhuận");
+    }
+</script>
+
+</body>
+</html>
